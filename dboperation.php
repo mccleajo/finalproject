@@ -67,6 +67,5 @@ function logout(){
 	setcookie('login', 0, time()-3600);
 }
 
-// herro prease
 ?>
 
