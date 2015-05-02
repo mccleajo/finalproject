@@ -1,8 +1,21 @@
-<?php
+<!DOCTYPE html>
 
-function bmwpics(){
+<html lang="en">
+<head>
+     <meta charset="utf-8" />
+     <title>Welcome to BMWLand</title>
+     <link rel="stylesheet" type="text/css" href="projectstyle.css">
+     <style>
+     	#map-canvas {
+        width: 500px;
+        height: 400px;
+        }
 
-?>
+        body { background: url(755102-bmw-wallpaper.jpg) no-repeat center center fixed; background-size: center; background-repeat: no-repeat; font-family: helvetica;}
+
+     </style>
+</head>
+<body>
 
 
 	<legend>BMW Models</legend>
@@ -102,6 +115,3 @@ function bmwpics(){
 		</div>
 		</div>
 		<!-- End cssSlider.com -->
-
-<?php
-}

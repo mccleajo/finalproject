@@ -47,8 +47,8 @@ if ($next_month == 13 ) {
 
 <table width="200">
 <tr align="center">
-<td bgcolor="#999999" style="color:#FFFFFF">
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<td bgcolor="#0099cc" style="color:#FFFFFF">
+<table width="100%" border="1" cellspacing="2" cellpadding="2">
 <tr>
 <td width="50%" align="left">  <a href="<?php echo $_SERVER["PHP_SELF"] . "?month=". $prev_month . "&year=" . $prev_year; ?>" style="color:#FFFFFF">Previous</a></td>
 <td width="50%" align="right"><a href="<?php echo $_SERVER["PHP_SELF"] . "?month=". $next_month . "&year=" . $next_year; ?>" style="color:#FFFFFF">Next</a>  </td>
@@ -58,18 +58,18 @@ if ($next_month == 13 ) {
 </tr>
 <tr>
 <td align="center">
-<table width="100%" border="0" cellpadding="2" cellspacing="2">
+<table width="100%" border="10" cellpadding="10" cellspacing="10">
 <tr align="center">
-<td colspan="7" bgcolor="#999999" style="color:#FFFFFF"><strong><?php echo $monthNames[$cMonth-1].' '.$cYear; ?></strong></td>
+<td colspan="7" bgcolor="#0099cc" style="color:#FFFFFF"><strong><?php echo $monthNames[$cMonth-1].' '.$cYear; ?></strong></td>
 </tr>
 <tr>
-<td align="center" bgcolor="#999999" style="color:#FFFFFF"><strong>S</strong></td>
-<td align="center" bgcolor="#999999" style="color:#FFFFFF"><strong>M</strong></td>
-<td align="center" bgcolor="#999999" style="color:#FFFFFF"><strong>T</strong></td>
-<td align="center" bgcolor="#999999" style="color:#FFFFFF"><strong>W</strong></td>
-<td align="center" bgcolor="#999999" style="color:#FFFFFF"><strong>T</strong></td>
-<td align="center" bgcolor="#999999" style="color:#FFFFFF"><strong>F</strong></td>
-<td align="center" bgcolor="#999999" style="color:#FFFFFF"><strong>S</strong></td>
+<td align="center" bgcolor="#0099cc" style="color:#FFFFFF"><strong>S</strong></td>
+<td align="center" bgcolor="#0099cc" style="color:#FFFFFF"><strong>M</strong></td>
+<td align="center" bgcolor="#0099cc" style="color:#FFFFFF"><strong>T</strong></td>
+<td align="center" bgcolor="#0099cc" style="color:#FFFFFF"><strong>W</strong></td>
+<td align="center" bgcolor="#0099cc" style="color:#FFFFFF"><strong>T</strong></td>
+<td align="center" bgcolor="#0099cc" style="color:#FFFFFF"><strong>F</strong></td>
+<td align="center" bgcolor="#0099cc" style="color:#FFFFFF"><strong>S</strong></td>
 </tr>
 
 <?php
@@ -80,7 +80,7 @@ $startday = $thismonth['wday'];
 for ($i=0; $i<($maxday+$startday); $i++) {
     if(($i % 7) == 0 ) echo "<tr>";
     if($i < $startday) echo "<td></td>";
-    else echo "<td align='center' valign='middle' height='20px'>". ($i - $startday + 1) . "</td>";
+    else echo "<td align='center' bgcolor='#E0E0E0' valign='middle' height='20px'>". ($i - $startday + 1) . "</td>";
     if(($i % 7) == 6 ) echo "</tr>";
 }
 
