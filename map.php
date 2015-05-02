@@ -8,53 +8,38 @@ $location = getCoordinates($address);
 $results = finddealerships($address);
 
 $dealerships = $results[0];
+$amount = count($dealerships);
 $latitudes = $results[1];
 $longitudes = $results[2];
+
 $i = 0;
-
-
-?> <!-- <div class='dealerships'> --> <?php
-// foreach ( $dealerships as $dealership ) {
-// 	$dealershipid = urlencode($dealership);
-// 	$latitudeid = urlencode($dealership . "latitude");
-// 	$longitudeid = urlencode($dealership . "longitude");
-// 	echo "<input type='hidden' value='$dealershipid' id='$dealershipid'>";
-// 	echo "<input type='hidden' value='$latitudes[$i]' id='$latitudeid'>";
-// 	echo "<input type='hidden' value='$longitudes[$i]' id='$longitudeid'>";
-// }
-?> <!-- </div>  --><?php
-
-
 foreach ( $dealerships as $dealership ) {
-?> <div class='dealers'> <?php
 	$dealershipid = urlencode($dealership);
-	echo "<input type='hidden' value='$dealershipid' id='$dealershipid'>";
-?> </div> <?php
+	$value = "dealer" . "$i";
+	echo "<input type='hidden' value='$dealershipid' id='$value'>\n";
+	$i = $i + 1;
 }
 
-
-?> <div class='latitudes'> <?php
+$j = 0;
 foreach ( $latitudes as $latitude ) {
 	$latitudeid = urlencode($latitude);
-
-	echo "<input type='hidden' value='$latitudeid' id='$latitudeid'>";
-?> </div> <?php
+	$value = "latitude" . "$j";
+	echo "<input type='hidden' value='$latitudeid' id='$value'>\n";
+	$j = $j + 1;
 }
 
-
-?> <div class='longitudes'> <?php
+$k = 0;
 foreach ( $longitudes as $longitude ) {
 	$longitudeid = urlencode($longitude);
-	echo "<input type='hidden' value='$longitudeid' id='$longitudeid'>";
-	$i += 1;
-?> </div> <?php
+	$value = "longitude" . "$k";
+	echo "<input type='hidden' value='$longitudeid' id='$value'>\n";
+	$k = $k + 1;
 }
 
 ?>
-
 <input type='hidden' value="<?php echo $location['latitude'];  ?>" id='latitude' >
 <input type='hidden' value="<?php echo $location['longitude']; ?>" id='longitude' >
-
+<input type='hidden' value="<?php echo $amount; ?>" id='amount' >
 <script>
 
 function initialize() {
@@ -63,27 +48,22 @@ function initialize() {
 	var longitude=document.getElementById("longitude").value;	
 	var mapOptions = {
   		center: new google.maps.LatLng(latitude, longitude),
-  		zoom: 12,
+  		zoom: 10,
   		mapTypeId: google.maps.MapTypeId.ROADMAP
 	}
 	var map = new google.maps.Map(mapCanvas, mapOptions);
-	var dealerships=document.getElementsByClassName("dealers");
-	var latitudes=document.getElementsByClassName("latitudes");
-	var longitudes=document.getElementsByClassName("longitudes");	
-	
-// 	var marker = new google.maps.Marker({
-// 		position: new google.maps.LatLng(latitude, longitude),
-// 		map: map,
-// 		title: 'Hello World!'
-// 		});
-
-	for (i = 0; i < dealerships.length; i++){
-		var dealership = dealerships[i];
-		var markerlat = latitudes[i];
-		var markerlng = longitudes[i];
-		var latlng = new google.maps.LatLng(markerlat, markerlng);
+	var marker = new google.maps.Marker({
+		position: new google.maps.LatLng(latitude, longitude),
+		map: map,
+		title: 'Hello World!'
+		});
+	var amount=document.getElementById("amount").value;
+	for (i = 0; i < amount; i++){
+		var dealer = document.getElementById("dealer" + i).value;
+		var markerlat = document.getElementById("latitude" + i).value;
+		var markerlng = document.getElementById("longitude" + i).value;
 		var marker = new google.maps.Marker( {
-			position: latlng,
+			position: new google.maps.LatLng(markerlat, markerlng),
 			map: map,
 			title: "test"
 		} ) ;
@@ -94,5 +74,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 </script>
 
 <?php
+
+
 
 

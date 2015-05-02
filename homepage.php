@@ -31,6 +31,10 @@
 // }
 
 
+?> <div id="map-canvas"></div><?php
+include 'map.php';
+
+
 if ( !isset ( $_COOKIE['login'] ) ) {
 	?> <h3> User not logged in! </h3> 
 	<a href="login.php">
@@ -44,8 +48,6 @@ if ( isset ( $_POST['locations'] ) ) {
 		locationform();
 	}
 	if ( isset ($_POST['submitloc'] ) ) {
-		?> <div id="map-canvas"></div><?php
-		include 'map.php';
 		locationform();
 	}
 
@@ -96,7 +98,7 @@ function locationform(){
 	<legend>Search BMW Locations</legend><br>
 		<form method="post">
 			<input type='text' name='address' id='address'><br>
-			<input class = 'mybutton' type='submit' name='submitloc'><br><br><br><br><br>
+			<input class = 'mybutton' type='submit' name='submitloc' onsubmit='initialize()'><br><br><br><br><br>
 		</form>
 
 
