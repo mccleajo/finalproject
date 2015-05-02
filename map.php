@@ -66,7 +66,7 @@ function initialize() {
   		zoom: 12,
   		mapTypeId: google.maps.MapTypeId.ROADMAP
 	}
-	var map = new google.maps.Map(mapCanvas, mapOptions)
+	var map = new google.maps.Map(mapCanvas, mapOptions);
 	var dealerships=document.getElementsByClassName("dealers");
 	var latitudes=document.getElementsByClassName("latitudes");
 	var longitudes=document.getElementsByClassName("longitudes");	
