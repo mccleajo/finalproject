@@ -1,5 +1,8 @@
 # finalproject
 
-Testing
+Things to do:
 
-Testing 2
+-Regex expressions for password, email address
+
+-Javascript Validation when user successfully made
+-Javascript validation when user does not input location

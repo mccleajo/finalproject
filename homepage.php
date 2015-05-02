@@ -20,21 +20,6 @@
 
 <?php
 
-//include 'bmwpics.php';
-
-
-// $results = finddealerships("310 Corlies Avenue, Pelham, NY 10803");	
-// $dealerships = $results[0];
-// foreach ( $dealerships as $dealership ) {
-// 	echo $dealership;
-	?><!--  <br>  --><?php
-// }
-
-
-?> <div id="map-canvas"></div><?php
-include 'map.php';
-
-
 if ( !isset ( $_COOKIE['login'] ) ) {
 	?> <h3> User not logged in! </h3> 
 	<a href="login.php">
@@ -48,6 +33,8 @@ if ( isset ( $_POST['locations'] ) ) {
 		locationform();
 	}
 	if ( isset ($_POST['submitloc'] ) ) {
+		?> <div id="map-canvas"></div><?php
+		include 'map.php';
 		locationform();
 	}
 
