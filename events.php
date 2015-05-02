@@ -12,106 +12,12 @@
         }
 
         body { background: url(755102-bmw-wallpaper.jpg) no-repeat center center fixed; background-size: center; background-repeat: no-repeat; font-family: helvetica;}
+
      </style>
 </head>
 <body>
-
-<script src="https://maps.googleapis.com/maps/api/js"></script>
-
-<?php
-
-include 'bmwpics.php';
-
-
-// $results = finddealerships("310 Corlies Avenue, Pelham, NY 10803");	
-// $dealerships = $results[0];
-// foreach ( $dealerships as $dealership ) {
-// 	echo $dealership;
-	?><!--  <br>  --><?php
-// }
-
-
-if ( !isset ( $_COOKIE['login'] ) ) {
-	?> <h3> User not logged in! </h3> 
-	<a href="login.php">
-		<input class ='mybutton' type="button" value="Return to Login" />
-	</a> <?php
-	die();
-}
-
-
-if ( isset ( $_POST['locations'] ) ) {
-		locationform();
-	}
-	if ( isset ($_POST['submitloc'] ) ) {
-		?> <div id="map-canvas"></div><?php
-		include 'map.php';
-		locationform();
-	}
-
-
-if ( isset ( $_POST['history'] ) ) {
-		bmwpics();
-	}
-
-
-	if ( isset ( $_POST['events'] ) ) {
-		eventsform();
-	}
 	
-
-displayform();
-
-?>
-
-</body>
-</html>
-
 <?php
-
-function displayform(){
-
-?>
-
-
-		<form method="post">
-			<input class = 'mybutton' type='submit' name='locations' value='Find BMW Locations'><br>
-			<input class = 'mybutton' type='submit' name='history' value='BMW Models'><br><br>
-			<input class = 'mybutton' type='submit' name='posts' value='Posts'>
-		</form>
-
-		<a href="events.php">
-		<input class = 'mybutton' type='submit' name='events' value='Events'><br>
-		</a>
-
-		<form method="post" action="dboperation.php">
-			<input class = 'mybutton' type='submit' name='op' value='Log Out'><br>
-		</form>
-	
-
-
-		
-<?php
-
-}
-
-function locationform(){
-
-?>
-
-
-	<legend>Search BMW Locations</legend><br>
-		<form method="post">
-			<input type='text' name='address' id='address'><br>
-			<input class = 'mybutton' type='submit' name='submitloc'><br><br><br><br><br>
-		</form>
-
-
-<?php
-
-}
-
-/*function eventsform(){
 
 date_default_timezone_set('UTC');
 
@@ -177,7 +83,7 @@ for ($i=0; $i<($maxday+$startday); $i++) {
     else echo "<td align='center' valign='middle' height='20px'>". ($i - $startday + 1) . "</td>";
     if(($i % 7) == 6 ) echo "</tr>";
 }
-}
+
 ?>
 
 </table>
@@ -185,5 +91,5 @@ for ($i=0; $i<($maxday+$startday); $i++) {
 </tr>
 </table>
 
-*/
+
 
