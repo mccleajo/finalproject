@@ -1,0 +1,34 @@
+
+<style type = "text/css">
+    body { background: url(/image.jpg) no-repeat center center fixed; background-size: cover; background-repeat: no-repeat; font-family: helvetica;}
+    input, legend {font-size: 150%;}
+    select, option {font-size: 400%;}
+  
+p{
+    background-color: white;
+}
+
+.mybutton {
+    background-color: blue;
+    position:relative;
+    /*left: 46%;
+    margin-top:20%;*/
+    border-radius: 28px;
+    box-shadow: 8px 7px 8px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: #0099cc;
+    padding: 10px 20px 10px 20px;
+}
+
+.mybutton:hover {
+    background: #000000;
+}
+
+.mymenu {
+    font-size: 250%;
+    background-color: orange;
+}  
+  </style>
+ 
