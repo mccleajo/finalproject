@@ -5,16 +5,23 @@
      <meta charset="utf-8" />
      <title>Welcome to BMWLand</title>
      <link rel="stylesheet" type="text/css" href="projectstyle.css">
-     <style>
-     	#map-canvas {
-        width: 500px;
-        height: 400px;
-        }
 
-        body { background: url(755102-bmw-wallpaper.jpg) no-repeat center center fixed; background-size: center; background-repeat: no-repeat; font-family: helvetica;}
-     </style>
 </head>
 <body>
+
+<header>
+    <div class="nav">
+      <ul>
+        <li class="home"><a  class="active" href="homepage.php">Home</a></li>
+        <li class="locations"><a href="locations.php">Locations</a></li>
+        <li class="events"><a href="events.php">Events</a></li>
+        <li class="posts"><a href="posts.php">Posts</a></li>
+        <li class="bmwmodels"><a href="bmwpics.php">Models</a></li>
+        <li class="logout"><a href="login.php">Log Out</a></li>
+      </ul>
+    </div>
+</header>
+
 
 <script src="https://maps.googleapis.com/maps/api/js"></script>
 
@@ -38,9 +45,10 @@ if ( isset ( $_POST['locations'] ) ) {
 		locationform();
 	}
 
-displayform();
+//displayform();
 
 ?>
+
 
 </body>
 </html>

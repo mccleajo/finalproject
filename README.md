@@ -5,6 +5,10 @@ Things to do:
 Login:
 -Javascript Validation Regex expressions for password, email address
 
+Cookie logout:
+-We should make the cookie automatically return you to the login page and maybe just say "your session has expired" (and actually log you out)
+-Needs to be set up so on next click it logs you out
+
 Registration:
 -Validation when user successfully made
 -Javascript validation when user does not input location
@@ -31,5 +35,6 @@ Databases:
 
 Posts:
 -Put stuff on there... figure out what we want to do
+-Maybe have categories for posts etc?
 
 

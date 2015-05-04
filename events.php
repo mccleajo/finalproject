@@ -5,17 +5,23 @@
      <meta charset="utf-8" />
      <title>Welcome to BMWLand</title>
      <link rel="stylesheet" type="text/css" href="projectstyle.css">
-     <style>
-     	#map-canvas {
-        width: 500px;
-        height: 400px;
-        }
-
-        body { background: url(755102-bmw-wallpaper.jpg) no-repeat center center fixed; background-size: center; background-repeat: no-repeat; font-family: helvetica;}
-
-     </style>
+    
 </head>
 <body>
+
+
+<header>
+    <div class="nav">
+      <ul>
+        <li class="home"><a href="homepage.php">Home</a></li>
+        <li class="locations"><a href="locations.php">Locations</a></li>
+        <li class="events"><a class="active" href="events.php">Events</a></li>
+        <li class="posts"><a href="posts.php">Posts</a></li>
+        <li class="bmwmodels"><a href="bmwpics.php">Models</a></li>
+        <li class="logout"><a href="login.php">Log Out</a></li>
+      </ul>
+    </div>
+</header>
 	
 <?php
 
@@ -44,7 +50,7 @@ if ($next_month == 13 ) {
     $next_year = $cYear + 1;
 }
 ?>
-
+<Br>
 <table width="200">
 <tr align="center">
 <td bgcolor="#0099cc" style="color:#FFFFFF">
@@ -58,7 +64,7 @@ if ($next_month == 13 ) {
 </tr>
 <tr>
 <td align="center">
-<table width="100%" border="10" cellpadding="10" cellspacing="10">
+<table width="100%" border="12" cellpadding="12" cellspacing="12">
 <tr align="center">
 <td colspan="7" bgcolor="#0099cc" style="color:#FFFFFF"><strong><?php echo $monthNames[$cMonth-1].' '.$cYear; ?></strong></td>
 </tr>
