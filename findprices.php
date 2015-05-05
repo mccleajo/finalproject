@@ -4,7 +4,7 @@
 <head>
      <meta charset="utf-8" />
      <title>Welcome to BMWLand</title>
-
+     <link rel="stylesheet" type="text/css" href="projectstyle.css">
 </head>
 <body>
 
@@ -24,10 +24,10 @@ if ( !isset ( $_COOKIE['login'] ) ) {
     <div class="nav">
       <ul>
         <li><a href="homepage.php">Home</a></li>
-        <li><a class="active" href="locations.php">Locations</a></li>
+        <li><a href="locations.php">Locations</a></li>
         <li><a href="events.php">Events</a></li>
         <li><a href="posts.php">Posts</a></li>
-        <li><a href="findprices.php">Prices</a></li>
+        <li><a class="active" href="findprices.php">Prices</a></li>
         <li><a href="login.php">Log Out</a></li>
       </ul>
     </div>
@@ -57,7 +57,7 @@ function findpricingform( ){
 ?>
 	<form method="post">
 <?php
-	$filename = 'bmws.txt';
+	$filename = 'bmws2.txt';
 	$bmws = sortbmws();
 	?><select name="bmw"><?php
 	foreach ($bmws as $id => $name){
@@ -74,7 +74,7 @@ function findpricingform( ){
 
 function sortbmws(){
 
-	$filename = 'bmws.txt';
+	$filename = 'bmws2.txt';
 	$bmws = file($filename);
 	$ids = array();
 	
@@ -96,7 +96,4 @@ function findpricing($id){
 	}
 	$name = $bmws[$id];
 	echo "The MSRP price of $name is: " . $json['tmv']['nationalBasePrice']['baseMSRP'];
-
-
-
 }
