@@ -34,6 +34,9 @@ if ( !isset ( $_COOKIE['login'] ) ) {
     </div>
 </header>
 
+<div align="center">
+
+<?php include 'bmwpics.php'; ?>
 
 <script src="https://maps.googleapis.com/maps/api/js"></script>
 
