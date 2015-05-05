@@ -12,12 +12,12 @@
 <header>
     <div class="nav">
       <ul>
-        <li class="home"><a  class="active" href="homepage.php">Home</a></li>
-        <li class="locations"><a href="locations.php">Locations</a></li>
-        <li class="events"><a href="events.php">Events</a></li>
-        <li class="posts"><a href="posts.php">Posts</a></li>
-        <li class="bmwmodels"><a href="bmwpics.php">Models</a></li>
-        <li class="logout"><a href="login.php">Log Out</a></li>
+        <li><a  class="active" href="homepage.php">Home</a></li>
+        <li><a href="locations.php">Locations</a></li>
+        <li><a href="events.php">Events</a></li>
+        <li><a href="posts.php">Posts</a></li>
+        <li><a href="findprices.php">Prices</a></li>
+        <li><a href="login.php">Log Out</a></li>
       </ul>
     </div>
 </header>

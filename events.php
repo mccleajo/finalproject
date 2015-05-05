@@ -13,12 +13,12 @@
 <header>
     <div class="nav">
       <ul>
-        <li class="home"><a href="homepage.php">Home</a></li>
-        <li class="locations"><a href="locations.php">Locations</a></li>
-        <li class="events"><a class="active" href="events.php">Events</a></li>
-        <li class="posts"><a href="posts.php">Posts</a></li>
-        <li class="bmwmodels"><a href="bmwpics.php">Models</a></li>
-        <li class="logout"><a href="login.php">Log Out</a></li>
+        <li><a href="homepage.php">Home</a></li>
+        <li><a href="locations.php">Locations</a></li>
+        <li><a class="active" href="events.php">Events</a></li>
+        <li><a href="posts.php">Posts</a></li>
+        <li><a href="findprices.php">Prices</a></li>
+        <li><a href="login.php">Log Out</a></li>
       </ul>
     </div>
 </header>
@@ -50,33 +50,33 @@ if ($next_month == 13 ) {
     $next_year = $cYear + 1;
 }
 ?>
-<Br>
-<table width="200">
-<tr align="center">
-<td bgcolor="#0099cc" style="color:#FFFFFF">
-<table width="100%" border="1" cellspacing="2" cellpadding="2">
-<tr>
-<td width="50%" align="left">  <a href="<?php echo $_SERVER["PHP_SELF"] . "?month=". $prev_month . "&year=" . $prev_year; ?>" style="color:#FFFFFF">Previous</a></td>
-<td width="50%" align="right"><a href="<?php echo $_SERVER["PHP_SELF"] . "?month=". $next_month . "&year=" . $next_year; ?>" style="color:#FFFFFF">Next</a>  </td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td align="center">
-<table width="100%" border="12" cellpadding="12" cellspacing="12">
-<tr align="center">
-<td colspan="7" bgcolor="#0099cc" style="color:#FFFFFF"><strong><?php echo $monthNames[$cMonth-1].' '.$cYear; ?></strong></td>
-</tr>
-<tr>
-<td align="center" bgcolor="#0099cc" style="color:#FFFFFF"><strong>S</strong></td>
-<td align="center" bgcolor="#0099cc" style="color:#FFFFFF"><strong>M</strong></td>
-<td align="center" bgcolor="#0099cc" style="color:#FFFFFF"><strong>T</strong></td>
-<td align="center" bgcolor="#0099cc" style="color:#FFFFFF"><strong>W</strong></td>
-<td align="center" bgcolor="#0099cc" style="color:#FFFFFF"><strong>T</strong></td>
-<td align="center" bgcolor="#0099cc" style="color:#FFFFFF"><strong>F</strong></td>
-<td align="center" bgcolor="#0099cc" style="color:#FFFFFF"><strong>S</strong></td>
-</tr>
+<br>
+	<table width="200">
+		<tr align="center">
+			<td bgcolor="#0099cc" style="color:#FFFFFF">
+				<table width="100%" border="1" cellspacing="2" cellpadding="2">
+					<tr>
+						<td width="50%" align="left">  <a href="<?php echo $_SERVER["PHP_SELF"] . "?month=". $prev_month . "&year=" . $prev_year; ?>" style="color:#FFFFFF">Previous</a></td>
+						<td width="50%" align="right"><a href="<?php echo $_SERVER["PHP_SELF"] . "?month=". $next_month . "&year=" . $next_year; ?>" style="color:#FFFFFF">Next</a>  </td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td align="center">
+				<table width="100%" border="12" cellpadding="12" cellspacing="12">
+					<tr align="center">
+						<td colspan="7" bgcolor="#0099cc" style="color:#FFFFFF"><strong><?php echo $monthNames[$cMonth-1].' '.$cYear; ?></strong></td>
+					</tr>
+					<tr>
+						<td align="center" bgcolor="#0099cc" style="color:#FFFFFF"><strong>S</strong></td>
+						<td align="center" bgcolor="#0099cc" style="color:#FFFFFF"><strong>M</strong></td>
+						<td align="center" bgcolor="#0099cc" style="color:#FFFFFF"><strong>T</strong></td>
+						<td align="center" bgcolor="#0099cc" style="color:#FFFFFF"><strong>W</strong></td>
+						<td align="center" bgcolor="#0099cc" style="color:#FFFFFF"><strong>T</strong></td>
+						<td align="center" bgcolor="#0099cc" style="color:#FFFFFF"><strong>F</strong></td>
+						<td align="center" bgcolor="#0099cc" style="color:#FFFFFF"><strong>S</strong></td>
+					</tr>
 
 <?php
 $timestamp = mktime(0,0,0,$cMonth,1,$cYear);

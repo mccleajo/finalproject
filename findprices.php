@@ -8,6 +8,19 @@
 </head>
 <body>
 
+<header>
+    <div class="nav">
+      <ul>
+        <li><a href="homepage.php">Home</a></li>
+        <li><a class="active" href="locations.php">Locations</a></li>
+        <li><a href="events.php">Events</a></li>
+        <li><a href="posts.php">Posts</a></li>
+        <li><a href="findprices.php">Prices</a></li>
+        <li><a href="login.php">Log Out</a></li>
+      </ul>
+    </div>
+</header>
+
 <?php
 
 if ( isset ( $_POST['submit'] ) ) {

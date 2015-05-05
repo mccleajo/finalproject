@@ -57,11 +57,9 @@ function performQuery( $dbc, $query ){
 	return ( $result );
 }
 function createlogincookie(){
-	$email = $_POST['email'];
-	$password = $_POST['password'];
-	$userinfo = $email . "," . $password;
+	$username = $_POST['newuser'];
 	$exptime = time() + 900;
-	setcookie('login', $userinfo, $exptime);
+	setcookie('login', $username, $exptime);
 }
 function logout(){
 	setcookie('login', 0, time()-3600);
