@@ -74,7 +74,7 @@ function initialize() {
 		var marker = new google.maps.Marker( {
 			position: new google.maps.LatLng(markerlat, markerlng),
 			map: map,
-			title: decodeURIComponent(dealer.replace(/\+/g, '%20')+ "<br/>Tesing")
+			title: decodeURIComponent(dealer.replace(/\+/g, '%20'))
 		} ) ;
 		marker.info = new google.maps.InfoWindow({
 			content: dealer
