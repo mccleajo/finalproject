@@ -108,7 +108,59 @@ for ($i=0; $i<($maxday+$startday); $i++) {
 </tr>
 </table>
 
+
+<form method="post">
+  <input type = "text" name ="Searchbar" id = "Searchbar" value = "<?php if(isset($_POST['Searchbar'])) {echo $_POST['Searchbar'];}?>"/>
+  <input class="mybutton" name="Search" id="Search" value= "Search" type="submit"/>
+</form>
+
+
 <?php
+if(isset($_POST['Searchbar'])) {
+$Searchbar = $_POST['Searchbar'];
+
+$dbc = @mysqli_connect("localhost", "mccleajo", "pV2YzEEU", mccleajo) OR die("message".mysqli_connect_error());
+$query = "SELECT * FROM Events WHERE
+
+name LIKE '%$Searchbar%'";
+
+$result = mysqli_query( $dbc, $query);
+#$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+
+//echo "Query is $query";
+
+echo "<table>";
+echo "<tr><th>Events</th>";
+
+    // Cycle through the array
+    while ( @extract(mysqli_fetch_array($result, MYSQLI_ASSOC)) ) {
+
+        // Output a row
+        echo "<tr>";
+        echo "<td bgcolor='#E0E0E0'><b>$name</b><br>
+        Address: $address<br>
+        Time: $time<br>
+        Date: $date<br>
+
+        <form method='post' action = 'joinevent.php'>
+        <input class = 'mybutton' type='submit' name='joinevent' value= 'Join Event'><br>
+        <input type = 'hidden' value='$event_id' name='ID'>
+        </form>
+
+        <Br></td>";
+        echo "</tr>";
+    }
+
+    echo "</table>";
+}
+?>
+    
+
+
+
+
+<?php
+if(!isset($_POST['Searchbar'])) {
 
 $dbc = @mysqli_connect("localhost", "mccleajo", "pV2YzEEU", mccleajo) OR die("message".mysqli_connect_error());
 $query = "SELECT * FROM Events";
@@ -131,8 +183,8 @@ echo "<tr><th>Events</th>";
         Time: $time<br>
         Date: $date<br>
 
-        <form method='post' action = 'join.php'>
-        <input class = 'mybutton' type='submit' name='join' value= 'Join'><br>
+        <form method='post' action = 'joinevent.php'>
+        <input class = 'mybutton' type='submit' name='joinevent' value= 'Join Event'><br>
         <input type = 'hidden' value='$event_id' name='ID'>
         </form>
 
@@ -141,7 +193,8 @@ echo "<tr><th>Events</th>";
     }
 
     echo "</table>";
-    ?>
+}
+?>
 
 
 
