@@ -66,7 +66,6 @@ function findpricingform( ){
 	?>
 	</select>
 	<br>
-	Zip Code:<input type='text' name='zip'><br>
 	<input type='submit' value='Choose a BMW' name='submit'>
 	</form>
 <?php
