@@ -5,7 +5,7 @@
      <meta charset="utf-8" />
      <title>Welcome to BMWLand</title>
      <link rel="stylesheet" type="text/css" href="projectstyle.css">
-    
+
 </head>
 <body>
 
@@ -22,12 +22,12 @@
       </ul>
     </div>
 </header>
-	
+
 <?php
 
 date_default_timezone_set('UTC');
 
-$monthNames = Array("January", "February", "March", "April", "May", "June", "July", 
+$monthNames = Array("January", "February", "March", "April", "May", "June", "July",
 "August", "September", "October", "November", "December");
 
 if (!isset($_REQUEST["month"])) $_REQUEST["month"] = date("n");
@@ -35,12 +35,12 @@ if (!isset($_REQUEST["year"])) $_REQUEST["year"] = date("Y");
 
 $cMonth = $_REQUEST["month"];
 $cYear = $_REQUEST["year"];
- 
+
 $prev_year = $cYear;
 $next_year = $cYear;
 $prev_month = $cMonth-1;
 $next_month = $cMonth+1;
- 
+
 if ($prev_month == 0 ) {
     $prev_month = 12;
     $prev_year = $cYear - 1;
@@ -96,6 +96,41 @@ for ($i=0; $i<($maxday+$startday); $i++) {
 </td>
 </tr>
 </table>
+
+<?php
+
+$dbc = @mysqli_connect("localhost", "mccleajo", "pV2YzEEU", mccleajo) OR die("message".mysqli_connect_error());
+$query = "SELECT * FROM Events";
+
+$result = mysqli_query( $dbc, $query);
+#$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+
+//echo "Query is $query";
+
+echo "<table>";
+echo "<tr><th>Events</th>";
+
+    // Cycle through the array
+    while ( @extract(mysqli_fetch_array($result, MYSQLI_ASSOC)) ) {
+
+        // Output a row
+        echo "<tr>";
+        echo "<td bgcolor='#E0E0E0'><b>$name</b><br>
+        Address: $address<br>
+        Time: $time<br>
+        Date: $date<br>
+
+        <form method='post' action = 'join.php'>
+        <input class = 'mybutton' type='submit' name='join' value= 'Join'><br>
+        <input type = 'hidden' value='$event_id' name='ID'>
+        </form>
+
+        <Br></td>";
+        echo "</tr>";
+    }
+
+    echo "</table>";
+    ?>
 
 
 
