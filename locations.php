@@ -15,6 +15,18 @@
 
 <body>
 
+<?php
+
+if ( !isset ( $_COOKIE['login'] ) ) {
+	?> <h3> User not logged in! </h3> 
+	<a href="login.php">
+		<input class ='mybutton' type="button" value="Return to Login" />
+	</a> <?php
+	die();
+}
+
+?>
+
 <header>
     <div class="nav">
       <ul>

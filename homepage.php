@@ -9,6 +9,18 @@
 </head>
 <body>
 
+
+<?php 
+
+if ( !isset ( $_COOKIE['login'] ) ) {
+	?> <h3> User not logged in! </h3> 
+	<a href="login.php">
+		<input class ='mybutton' type="button" value="Return to Login" />
+	</a> <?php
+	die();
+}
+
+?>
 <header>
     <div class="nav">
       <ul>
@@ -26,15 +38,6 @@
 <script src="https://maps.googleapis.com/maps/api/js"></script>
 
 <?php
-
-if ( !isset ( $_COOKIE['login'] ) ) {
-	?> <h3> User not logged in! </h3> 
-	<a href="login.php">
-		<input class ='mybutton' type="button" value="Return to Login" />
-	</a> <?php
-	die();
-}
-
 
 if ( isset ( $_POST['locations'] ) ) {
 		locationform();
