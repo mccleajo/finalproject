@@ -26,9 +26,15 @@ if ( isset ( $_COOKIE['login'] ) ) {
  
  include 'forgotpassword.php';
 if ( isset ( $_POST['newpw'] ) ) {
- 	updatepassword( $_POST['email'] );
- 	?> <h3>A new password has been e-mailed to you!</h3> <?php
- 	displayform();
+	if ( True == checkemail( $_POST['email'] ) ){
+ 		updatepassword( $_POST['email'] );
+ 		?> <h3>A new password has been e-mailed to you!</h3> <?php
+ 		displayform();
+ 	}
+ 	else{
+ 		?> <h2> E-Mail Address Not Found </h2> <?php
+ 		forgotpasswordform();
+ 	}
  }
 else if ( isset ( $_POST['newacc'] ) ) {
 	newaccountform();	
