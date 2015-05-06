@@ -9,7 +9,7 @@
      <style>
 	 select, option {font-size: 150%;}
 	 </style>
-
+     <script type = "text/javascript" src = "javascript.js"> </script>
 <body>
 
 <div class="container">
@@ -186,7 +186,7 @@ function displayInsertPostForm(){
 ?>
 
 	<h2>Add a Post</h2>
-		<form method="post" onsubmit="return validate();"> 
+		<form method="post" onsubmit="return validatepost();"> 
 		<table>
     		<tr>
 				<td><label for="title">Title:</label></td>
@@ -205,7 +205,7 @@ function displayInsertPostForm(){
 				<td><span id="posttypeerror"></span><br></td>
 			</tr>
 		</table>
-			<br>Content: <span id="contentterror"></span><br>
+			<br>Content: <span id="contenterror"></span><br>
 			<input type='text' name='content' id='content' style="text-align: left;padding:  0.4em;padding-bottom:190px;width: 400px;height: 10px;"><br>
 			<input class ='mybutton' type='submit' name ='submit' value='Post'>
 		</form>
