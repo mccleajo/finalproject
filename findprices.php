@@ -57,7 +57,7 @@ function findpricingform( ){
 ?>
 	<form method="post">
 <?php
-	$filename = 'bmws2.txt';
+	$filename = 'bmws.txt';
 	$bmws = sortbmws();
 	?><select name="bmw"><?php
 	foreach ($bmws as $id => $name){
@@ -73,7 +73,7 @@ function findpricingform( ){
 
 function sortbmws(){
 
-	$filename = 'bmws2.txt';
+	$filename = 'bmws.txt';
 	$bmws = file($filename);
 	$ids = array();
 	
