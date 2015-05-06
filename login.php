@@ -25,13 +25,7 @@ if ( isset ( $_COOKIE['login'] ) ) {
 <?php
  
 include 'forgotpassword.php';
-if ( isset ( $_GET['login'] ) ) {
-	if ( "Failed" == $_GET['login'] ){
-		?> <h2> E-Mail and Password combination do not match! </h2><?php
-		displayform();
-	}
-}
-else if ( isset ( $_POST['newpw'] ) ) {
+if ( isset ( $_POST['newpw'] ) ) {
 	if ( True == checkemail( $_POST['email'] ) ){
  		updatepassword( $_POST['email'] );
  		?> <h3>A new password has been e-mailed to you!</h3> <?php
@@ -47,6 +41,12 @@ else if ( isset ( $_POST['newacc'] ) ) {
 } 
 else if ( isset ( $_POST['forgotpw'] ) ) {
 	forgotpasswordform();
+}
+else if ( isset ( $_GET['login'] ) ) {
+	if ( "Failed" == $_GET['login'] ){
+		?> <h2> E-Mail and Password combination do not match! </h2><?php
+		displayform();
+	}
 }
 else if ( isset ( $_GET['adduser'] ) ) {
 	if ( "success" == $_GET['adduser'] ){
