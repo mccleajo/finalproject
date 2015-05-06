@@ -127,3 +127,39 @@ function validateloginpassword(){
 		error.innerHTML="";
 		return true;
 }
+function validatelocation(){
+	var address=document.getElementById("address").value;
+	if ( address.length < 1 ) {
+		var error=document.getElementById("locationerror");
+		error.style.color = "red";
+		error.innerHTML = "Please enter an address";
+		return false;
+	}
+	var error=document.getElementById("locationerror");
+	error.innerHTML="";
+	return true;
+}
+function validatetitle(){
+	var title=document.getElementById("title").value;
+	if ( title.length < 1 ) {
+		var error=document.getElementById("titleerror");
+		error.style.color = "red";
+		error.innerHTML = "Please enter a Title";
+		return false;
+	}
+	var error=document.getElementById("titleerror");
+	error.innerHTML="";
+	return true;
+}
+function validatecontent(){
+	var content=document.getElementById("content").value;
+	if ( content.length < 1 ) {
+		var error=document.getElementById("contenterror");
+		error.style.color = "red";
+		error.innerHTML = "Please enter a message";
+		return false;
+	}
+	var error=document.getElementById("contenterror");
+	error.innerHTML="";
+	return true;
+}

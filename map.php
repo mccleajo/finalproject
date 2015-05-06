@@ -9,31 +9,35 @@ $results = finddealerships($address);
 
 $dealerships = $results[0];
 $amount = count($dealerships);
-$latitudes = $results[1];
-$longitudes = $results[2];
 
 $i = 0;
-foreach ( $dealerships as $dealership ) {
-	$dealershipid = urlencode($dealership);
-	$value = "dealer" . "$i";
-	echo "<input type='hidden' value='$dealershipid' id='$value'>\n";
-	$i = $i + 1;
-}
 
-$j = 0;
-foreach ( $latitudes as $latitude ) {
-	$latitudeid = urlencode($latitude);
-	$value = "latitude" . "$j";
-	echo "<input type='hidden' value='$latitudeid' id='$value'>\n";
-	$j = $j + 1;
-}
+if ( count( $dealerships ) > 1 ){
+	$latitudes = $results[1];
+	$longitudes = $results[2];
+	
+	foreach ( $dealerships as $dealership ) {
+		$dealershipid = urlencode($dealership);
+		$value = "dealer" . "$i";
+		echo "<input type='hidden' value='$dealershipid' id='$value'>\n";
+		$i = $i + 1;
+	}
 
-$k = 0;
-foreach ( $longitudes as $longitude ) {
-	$longitudeid = urlencode($longitude);
-	$value = "longitude" . "$k";
-	echo "<input type='hidden' value='$longitudeid' id='$value'>\n";
-	$k = $k + 1;
+	$j = 0;
+	foreach ( $latitudes as $latitude ) {
+		$latitudeid = urlencode($latitude);
+		$value = "latitude" . "$j";
+		echo "<input type='hidden' value='$latitudeid' id='$value'>\n";
+		$j = $j + 1;
+	}
+
+	$k = 0;
+	foreach ( $longitudes as $longitude ) {
+		$longitudeid = urlencode($longitude);
+		$value = "longitude" . "$k";
+		echo "<input type='hidden' value='$longitudeid' id='$value'>\n";
+		$k = $k + 1;
+	}
 }
 
 ?>
@@ -90,5 +94,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 </script>
 
 <?php
+
+
 
 

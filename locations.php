@@ -12,6 +12,8 @@
         height: 400px;
         }
 	</style>
+	
+     <script type = "text/javascript" src = "javascript.js"> </script>
 
 <body>
 
@@ -45,9 +47,10 @@ if ( !isset ( $_COOKIE['login'] ) ) {
 <div align="center">
 
 	<br><legend>Search BMW Locations</legend>
-		<form method="post">
-			<input type='text' name='address' id='address'><br>
-			<input class = 'mybutton' type='submit' name='submitloc' onsubmit='initialize()'><br><br>
+		<form method="post" onsubmit="return validatelocation();">
+			<input type='text' name='address' id='address'><br><span id='locationerror'></span><br>
+			<input class = 'mybutton' type='submit' name='submitloc'>
+			<br><br>
 		</form>
 
 		<?php
