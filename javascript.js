@@ -26,7 +26,14 @@ function validateforgotpassword() {
 	}
 	return false;
 }
-
+function validatepost(){
+	var validtitle = validatetitle();
+	var validcontent = validatecontent();
+	if (validtitle && validcontent){
+		return true;
+	}
+	return false;
+}
 function validatefirstname(){
 	var firstname=document.getElementById("firstname").value;
 	if ( firstname.length < 1 ) {
