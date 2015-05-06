@@ -57,6 +57,8 @@ else if ( isset ( $_POST['email'] ) ) {
 
 else if ( isset ( $_POST['submit'] ) ) {
 	insertPost();
+	?> <h2> Post successfully added </h2> <?php
+	displayposts('');
 }
 else if ( isset ( $_POST['Searchbar'])){
 	displayposts($_POST['Searchbar']);
@@ -135,7 +137,7 @@ function showpost($id, $title, $created_by, $content, $date, $post_type, $button
 		<table>
 			<tr>
 				<td bgcolor='#E0E0E0' style="width:'500'"> 
-					 <?php echo "<b>Title:</b> $title<br> <b>Date:</b> $date"; ?><br>
+					 <?php echo "<b>$title</b><br>"; ?><br>
 					 <?php echo "<b>Posted by:</b> $created_by <br><b>Action:</b> $post_type"; ?><br>
 					 <?php echo "<b>Content:</b> $content"; ?> <br> 	
 					 <input type='hidden' name='id' value="<?php echo $id; ?>" />				 

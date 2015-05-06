@@ -103,5 +103,5 @@ function findpricing($id){
 		$json = json_decode($info, true);
 	}
 	$name = $bmws[$id];
-	echo "<br>The MSRP price of a $name is: " . $json['tmv']['nationalBasePrice']['baseMSRP'];
+	echo "<br>The MSRP price of a $name is: \$" . $json['tmv']['nationalBasePrice']['baseMSRP'];
 }
