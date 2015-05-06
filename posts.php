@@ -17,7 +17,7 @@
         <li><a href="events.php">Events</a></li>
         <li><a href="posts.php">Posts</a></li>
         <li><a href="findprices.php">Prices</a></li>
-        <li><a href="login.php">Log Out</a></li>
+        <li><a href="logout.php">Log Out</a></li>
       </ul>
     </div>
 </header>
