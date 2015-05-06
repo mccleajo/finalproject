@@ -71,13 +71,15 @@ if ( isset ( $_POST['attendants'] ) ) {
 
     echo "</table>";
 
+}
 
 
+
+echo "<br><b>Current Attendants:<br></b>";
 
 
 
 $query = "SELECT user_id FROM user_events WHERE event_id= '$event_id'";
-
 $result = mysqli_query( $dbc, $query);
 
 //echo "Query: $query <br />"; // for debug
@@ -86,37 +88,34 @@ while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {;
 
     if (isset($row['user_id'])){
         $user_id = $row['user_id'];
+        //echo "<br>$user_id";
+        displaynames($user_id);
+    } else {
+    echo "<br>There are no attendants for this event yet!"; 
+    }
+}
 
+function displaynames($user_id){
+        $dbc = @mysqli_connect("localhost", "mccleajo", "pV2YzEEU", mccleajo) OR die("message".mysqli_connect_error());
         $query = "SELECT firstname, lastname FROM users WHERE user_id= '$user_id'";
         $result = mysqli_query( $dbc, $query);
 
         //echo "Query: $query <br />"; // for debug
-        echo "<br><table>";
-        echo "<th>Current Attendants:</th>";
-
-        echo "<tr>";
-        echo "<td bgcolor='#E0E0E0'>";
+       
 
         while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {;
             $firstname = $row['firstname'];
             $lastname = $row['lastname'];
-            echo "$firstname $lastname<br> </td></tr></table>";}
-
-    } else {
-
-    echo "<br>There are no attendants for this event yet!"; }
-
+            echo "$firstname $lastname<br>";
+    } 
+      
 }
 
+  
 
 
 
 //echo "user_id: $user_id<br>";
-}
-
-
-
-
 
 
 

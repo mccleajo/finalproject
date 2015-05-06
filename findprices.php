@@ -5,6 +5,11 @@
      <meta charset="utf-8" />
      <title>Welcome to BMWLand</title>
      <link rel="stylesheet" type="text/css" href="projectstyle.css">
+
+     <style>
+	 select, option {font-size: 150%;}
+	 </style>
+
 </head>
 <body>
 
@@ -55,6 +60,8 @@ sortbmws();
 function findpricingform( ){
 
 ?>
+
+<div align = "center"><Br>
 	<form method="post">
 <?php
 	$filename = 'bmws.txt';
@@ -65,9 +72,11 @@ function findpricingform( ){
 	}
 	?>
 	</select>
-	<br>
-	<input type='submit' value='Choose a BMW' name='submit'>
+	<br><br>
+	<input class = 'mybutton' type='submit' value='Choose a BMW' name='submit'>
 	</form>
+</div>
+
 <?php
 }
 
@@ -94,5 +103,5 @@ function findpricing($id){
 		$json = json_decode($info, true);
 	}
 	$name = $bmws[$id];
-	echo "The MSRP price of $name is: " . $json['tmv']['nationalBasePrice']['baseMSRP'];
+	echo "<br>The MSRP price of a $name is: " . $json['tmv']['nationalBasePrice']['baseMSRP'];
 }
