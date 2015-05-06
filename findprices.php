@@ -89,8 +89,8 @@ function sortbmws(){
 
 function findpricing($id){
 	$bmws = sortbmws();
-	if (False != file_get_contents('https://api.edmunds.com/v1/api/tmv/tmvservice/calculatenewtmv?styleid='.$id.'&zip=02467&fmt=json&api_key=cbzsd8kr9usnmssk2aqqy2t9')){
-		$info = file_get_contents('https://api.edmunds.com/v1/api/tmv/tmvservice/calculatenewtmv?styleid='.$id.'&zip=10803&fmt=json&api_key=cbzsd8kr9usnmssk2aqqy2t9');
+	if (False != file_get_contents('https://api.edmunds.com/v1/api/tmv/tmvservice/calculatenewtmv?styleid='.'200'.$id.'&zip=02467&fmt=json&api_key=cbzsd8kr9usnmssk2aqqy2t9')){
+		$info = file_get_contents('https://api.edmunds.com/v1/api/tmv/tmvservice/calculatenewtmv?styleid='.'200'.$id.'&zip=10803&fmt=json&api_key=cbzsd8kr9usnmssk2aqqy2t9');
 		$json = json_decode($info, true);
 	}
 	$name = $bmws[$id];

@@ -75,7 +75,6 @@
 200694224, 650i xDrive 2dr Convertible AWD (4.4L 8cyl Turbo 8A)
 200441996, 650i 4dr Sedan (4.4L 8cyl Turbo 8A)
 200441997, 650i xDrive 4dr Sedan AWD (4.4L 8cyl Turbo 8A)
-101418788, 640i 4dr Sedan (3.0L 6cyl Turbo 8A)
 200471739, 640i 4dr Sedan (3.0L 6cyl Turbo 8A)
 200471740, 640i xDrive 4dr Sedan AWD (3.0L 6cyl Turbo 8A)
 200471741, 650i 4dr Sedan (4.4L 8cyl Turbo 8A)
