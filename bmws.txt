@@ -1,387 +1,118 @@
-   200428722, 128i 2dr Coupe (3.0L 6cyl 6M)
-
-200428721, 128i 2dr Convertible (3.0L 6cyl 6M)
-
-200421701, 135is 2dr Coupe (3.0L 6cyl Turbo 6M)
-
-200428724, 135i 2dr Coupe (3.0L 6cyl Turbo 6M)
-
-200428723, 135i 2dr Convertible (3.0L 6cyl Turbo 6M) 
-
-200428726, 128i SULEV 2dr Coupe (3.0L 6cyl 6M) 
-
-200428725, 128i SULEV 2dr Convertible (3.0L 6cyl 6M) 
-
-200428727, 135is 2dr Convertible (3.0L 6cyl Turbo 6M)
-
-200467979, M235i 2dr Coupe (3.0L 6cyl Turbo 8A) 
-
-200689047, 228i 2dr Coupe (2.0L 4cyl Turbo 8A) 
-
-200676055, 228i 2dr Convertible (2.0L 4cyl Turbo 8A) 
-
-200707505, M235i xDrive 2dr Coupe AWD (3.0L 6cyl Turbo 8A) 
-
-200721943, 228i xDrive 2dr Convertible AWD (2.0L 4cyl Turbo 8A) 
-
-200707500, 228i 2dr Coupe (2.0L 4cyl Turbo 8A) 
-
-200721944, M235i 2dr Convertible (3.0L 6cyl Turbo 8A) 
-
-200707503, 228i xDrive 2dr Coupe AWD (2.0L 4cyl Turbo 8A) 
-
-200707504, M235i 2dr Coupe (3.0L 6cyl Turbo 8A) 
-
-200707501, 228i SULEV 2dr Coupe (2.0L 4cyl Turbo 8A) 
-
-200707502, 228i xDrive SULEV 2dr Coupe AWD (2.0L 4cyl Turbo 8A)
-
-200423471, 328i xDrive 2dr Coupe AWD (3.0L 6cyl 6M) 
-
-200423469, 328i 4dr Sedan (2.0L 4cyl Turbo 6M) 
-
-200423467, 328i 2dr Convertible (3.0L 6cyl 6M) 
-
-200423468, 328i 2dr Coupe (3.0L 6cyl 6M) 
-
-101414454, ActiveHybrid 3 4dr Sedan (3.0L 6cyl Turbo gas/electric hybrid 8A) 
-
-200423804, 328i xDrive 4dr Sedan AWD (2.0L 4cyl Turbo 8A) 
-
-200423805, 335i xDrive 4dr Sedan AWD (3.0L 6cyl Turbo 6M) 
-
-200459518, 320i 4dr Sedan (2.0L 4cyl Turbo 8A) 
-
-200460586, 320i xDrive 4dr Sedan AWD (2.0L 4cyl Turbo 8A) 
-
-200423478, 335is 2dr Coupe (3.0L 6cyl Turbo 6M) 
-
-200423477, 335is 2dr Convertible (3.0L 6cyl Turbo 6M) 
-
-200423476, 335i xDrive 2dr Coupe AWD (3.0L 6cyl Turbo 6M) 
-
-200423475, 335i 4dr Sedan (3.0L 6cyl Turbo 6M) 
-
-200423474, 335i 2dr Coupe (3.0L 6cyl Turbo 6M) 
-
-200423473, 335i 2dr Convertible (3.0L 6cyl Turbo 6M) 
-
-200489829, 328d xDrive 4dr Sedan AWD (2.0L 4cyl Turbodiesel 8A) 
-
-200489830, 328d 4dr Sedan (2.0L 4cyl Turbodiesel 8A)
- 
-200489817, 320i 4dr Sedan (2.0L 4cyl Turbo 8A) 
-
-200489831, 335i 4dr Sedan (3.0L 6cyl Turbo 8A) 
-
-200489818, 320i xDrive 4dr Sedan AWD (2.0L 4cyl Turbo 8A) 
-
-200489823, 328i SULEV 4dr Sedan (2.0L 4cyl Turbo 8A) 
-
-200489825, 328i xDrive 4dr Sedan AWD (2.0L 4cyl Turbo 8A) 
-
-200489821, 328i 4dr Sedan (2.0L 4cyl Turbo 8A) 
-
-200489827, 328i xDrive SULEV 4dr Sedan AWD (2.0L 4cyl Turbo 8A) 
-
-200468555, 328i xDrive 4dr Wagon AWD (2.0L 4cyl Turbo 8A) 
-
-200489833, 335i xDrive 4dr Sedan AWD (3.0L 6cyl Turbo 8A) 
-
-200489782, 328d xDrive 4dr Wagon AWD (2.0L 4cyl Turbodiesel 8A) 
-
-200489835, ActiveHybrid 3 4dr Sedan (3.0L 6cyl Turbo gas/electric hybrid 8A) 
-
-200704023, ActiveHybrid 3 4dr Sedan (3.0L 6cyl Turbo gas/electric hybrid 8A) 
-
-200704024, 328i xDrive 4dr Wagon AWD (2.0L 4cyl Turbo 8A) 
-
-200704021, 335i 4dr Sedan (3.0L 6cyl Turbo 8A) 
-
-200704022, 335i xDrive 4dr Sedan AWD (3.0L 6cyl Turbo 8A) 
-
-200704019, 328d 4dr Sedan (2.0L 4cyl Turbodiesel 8A) 
-
-200704020, 328d xDrive 4dr Sedan AWD (2.0L 4cyl Turbodiesel 8A) 
-
-200704017, 328i xDrive 4dr Sedan AWD (2.0L 4cyl Turbo 8A) 
-
-200704018, 328i xDrive SULEV 4dr Sedan AWD (2.0L 4cyl Turbo 8A) 
-
-200704016, 328i SULEV 4dr Sedan (2.0L 4cyl Turbo 8A)
- 
-200704015, 328i 4dr Sedan (2.0L 4cyl Turbo 8A) 
-
-200704014, 320i xDrive 4dr Sedan AWD (2.0L 4cyl Turbo 8A) 
-
-200704013, 320i 4dr Sedan (2.0L 4cyl Turbo 8A) 
-
-200704025, 328d xDrive 4dr Wagon AWD (2.0L 4cyl Turbodiesel 8A)
-
-200461850, 335i xDrive 4dr Hatchback AWD (3.0L 6cyl Turbo 8A) 
-
-200484804, 328i xDrive 4dr Hatchback AWD (2.0L 4cyl Turbo 8A) 
-
-200706932, 328i xDrive 4dr Hatchback AWD (2.0L 4cyl Turbo 8A) 
-
-200706934, 335i xDrive 4dr Hatchback AWD (3.0L 6cyl Turbo 8A) 
-
-200706933, 328i xDrive SULEV 4dr Hatchback AWD (2.0L 4cyl Turbo 8A)
- 
-200692674, 428i xDrive 2dr Convertible AWD (2.0L 4cyl Turbo 8A) 
-
-200483675, 435i xDrive 2dr Coupe AWD (3.0L 6cyl Turbo 8A) 
-
-200678222, 428i 2dr Convertible (2.0L 4cyl Turbo 8A) 
-
-200483674, 435i 2dr Coupe (3.0L 6cyl Turbo 8A) 
-
-200678223, 428i SULEV 2dr Convertible (2.0L 4cyl Turbo 8A) 
-
-200483673, 428i xDrive SULEV 2dr Coupe AWD (2.0L 4cyl Turbo 8A) 
-
-200678224, 435i 2dr Convertible (3.0L 6cyl Turbo 8A) 
-
-200692675, 428i xDrive SULEV 2dr Convertible AWD (2.0L 4cyl Turbo 8A) 
-
-200466556, 428i 2dr Coupe (2.0L 4cyl Turbo 8A) 
-
-200483672, 428i xDrive 2dr Coupe AWD (2.0L 4cyl Turbo 8A) 
-
-200483671, 428i SULEV 2dr Coupe (2.0L 4cyl Turbo 8A) 
-
-200704634, 428i xDrive SULEV 2dr Convertible AWD (2.0L 4cyl Turbo 8A) 
-
-200704633, 428i xDrive 2dr Convertible AWD (2.0L 4cyl Turbo 8A) 
-
-200704636, 435i xDrive 2dr Convertible AWD (3.0L 6cyl Turbo 8A) 
-
-200704635, 435i 2dr Convertible (3.0L 6cyl Turbo 8A) 
-
-200704638, 428i xDrive 2dr Coupe AWD (2.0L 4cyl Turbo 8A) 
-
-200704637, 428i SULEV 2dr Coupe (2.0L 4cyl Turbo 8A) 
-
-200704639, 428i xDrive SULEV 2dr Coupe AWD (2.0L 4cyl Turbo 8A) 
-
-200704628, 428i 2dr Coupe (2.0L 4cyl Turbo 8A) 
-
-200704630, 435i xDrive 2dr Coupe AWD (3.0L 6cyl Turbo 8A) 
-
-200704629, 435i 2dr Coupe (3.0L 6cyl Turbo 8A) 
-
-200704632, 428i SULEV 2dr Convertible (2.0L 4cyl Turbo 8A) 
-
-200704631, 428i 2dr Convertible (2.0L 4cyl Turbo 8A) 
-
-200676096, 428i SULEV 4dr Sedan (2.0L 4cyl Turbo 8A) 
-
-200700853, 435i xDrive 4dr Sedan AWD (3.0L 6cyl Turbo 8A) 
-
-200698044, 428i 4dr Sedan (2.0L 4cyl Turbo 8A) 
-
-200698043, 428i xDrive 4dr Sedan AWD (2.0L 4cyl Turbo 8A) 
-
-200698042, 428i xDrive SULEV 4dr Sedan AWD (2.0L 4cyl Turbo 8A) 
-
+200704634, 428i xDrive SULEV 2dr Convertible AWD (2.0L 4cyl Turbo 8A)
+200704633, 428i xDrive 2dr Convertible AWD (2.0L 4cyl Turbo 8A)
+200704636, 435i xDrive 2dr Convertible AWD (3.0L 6cyl Turbo 8A)
+200704635, 435i 2dr Convertible (3.0L 6cyl Turbo 8A)
+200704638, 428i xDrive 2dr Coupe AWD (2.0L 4cyl Turbo 8A)
+200704637, 428i SULEV 2dr Coupe (2.0L 4cyl Turbo 8A)
+200704639, 428i xDrive SULEV 2dr Coupe AWD (2.0L 4cyl Turbo 8A)
+200704628, 428i 2dr Coupe (2.0L 4cyl Turbo 8A)
+200704630, 435i xDrive 2dr Coupe AWD (3.0L 6cyl Turbo 8A)
+200704629, 435i 2dr Coupe (3.0L 6cyl Turbo 8A)
+200704632, 428i SULEV 2dr Convertible (2.0L 4cyl Turbo 8A)
+200704631, 428i 2dr Convertible (2.0L 4cyl Turbo 8A)
+200676096, 428i SULEV 4dr Sedan (2.0L 4cyl Turbo 8A)
+200700853, 435i xDrive 4dr Sedan AWD (3.0L 6cyl Turbo 8A)
+200698044, 428i 4dr Sedan (2.0L 4cyl Turbo 8A)
+200698043, 428i xDrive 4dr Sedan AWD (2.0L 4cyl Turbo 8A)
+200698042, 428i xDrive SULEV 4dr Sedan AWD (2.0L 4cyl Turbo 8A)
 200698041, 435i 4dr Sedan (3.0L 6cyl Turbo 8A)
-
-200429165, 528i 4dr Sedan (2.0L 4cyl Turbo 8A) 
-
-200429166, 528i xDrive 4dr Sedan AWD (2.0L 4cyl Turbo 8A) 
-
-200429167, 535i 4dr Sedan (3.0L 6cyl Turbo 6M) 
-
-200429168, 535i xDrive 4dr Sedan AWD (3.0L 6cyl Turbo 8A) 
-
-200429170, 550i xDrive 4dr Sedan AWD (4.4L 8cyl Turbo 8A) 
-
-200429169, 550i 4dr Sedan (4.4L 8cyl Turbo 6M) 
-
-200429171, ActiveHybrid 5 4dr Sedan (3.0L 6cyl Turbo gas/electric hybrid 8A) 
-
-200493207, 535d xDrive 4dr Sedan AWD (3.0L 6cyl Turbodiesel 8A) 
-
-200493208, 535d 4dr Sedan (3.0L 6cyl Turbodiesel 8A) 
-
-200474278, 528i 4dr Sedan (2.0L 4cyl Turbo 8A) 
-
-200493205, 535i xDrive 4dr Sedan AWD (3.0L 6cyl Turbo 8A) 
-
-200493206, 535i 4dr Sedan (3.0L 6cyl Turbo 8A) 
-
-200493204, 528i xDrive 4dr Sedan AWD (2.0L 4cyl Turbo 8A) 
-
+200429165, 528i 4dr Sedan (2.0L 4cyl Turbo 8A)
+200429166, 528i xDrive 4dr Sedan AWD (2.0L 4cyl Turbo 8A)
+200429167, 535i 4dr Sedan (3.0L 6cyl Turbo 6M)
+200429168, 535i xDrive 4dr Sedan AWD (3.0L 6cyl Turbo 8A)
+200429170, 550i xDrive 4dr Sedan AWD (4.4L 8cyl Turbo 8A)
+200429169, 550i 4dr Sedan (4.4L 8cyl Turbo 6M)
+200429171, ActiveHybrid 5 4dr Sedan (3.0L 6cyl Turbo gas/electric hybrid 8A)
+200493207, 535d xDrive 4dr Sedan AWD (3.0L 6cyl Turbodiesel 8A)
+200493208, 535d 4dr Sedan (3.0L 6cyl Turbodiesel 8A)
+200474278, 528i 4dr Sedan (2.0L 4cyl Turbo 8A)
+200493205, 535i xDrive 4dr Sedan AWD (3.0L 6cyl Turbo 8A)
+200493206, 535i 4dr Sedan (3.0L 6cyl Turbo 8A)
+200493204, 528i xDrive 4dr Sedan AWD (2.0L 4cyl Turbo 8A)
 200493209, 550i xDrive 4dr Sedan AWD (4.4L 8cyl Turbo 8A)
- 
-200493210, 550i 4dr Sedan (4.4L 8cyl Turbo 8A) 
-
-200705202, 550i 4dr Sedan (4.4L 8cyl Turbo 8A) 
-
-200705201, 535d xDrive 4dr Sedan AWD (3.0L 6cyl Turbodiesel 8A) 
-
-200705204, 550i xDrive 4dr Sedan AWD (4.4L 8cyl Turbo 8A) 
-
-200705192, 528i 4dr Sedan (2.0L 4cyl Turbo 8A) 
-
-200705193, 528i xDrive 4dr Sedan AWD (2.0L 4cyl Turbo 8A) 
-
-200705194, 535i 4dr Sedan (3.0L 6cyl Turbo 8A) 
-
-200705196, 535i xDrive 4dr Sedan AWD (3.0L 6cyl Turbo 8A) 
-
+200493210, 550i 4dr Sedan (4.4L 8cyl Turbo 8A)
+200705202, 550i 4dr Sedan (4.4L 8cyl Turbo 8A)
+200705201, 535d xDrive 4dr Sedan AWD (3.0L 6cyl Turbodiesel 8A)
+200705204, 550i xDrive 4dr Sedan AWD (4.4L 8cyl Turbo 8A)
+200705192, 528i 4dr Sedan (2.0L 4cyl Turbo 8A)
+200705193, 528i xDrive 4dr Sedan AWD (2.0L 4cyl Turbo 8A)
+200705194, 535i 4dr Sedan (3.0L 6cyl Turbo 8A)
+200705196, 535i xDrive 4dr Sedan AWD (3.0L 6cyl Turbo 8A)
 200705200, 535d 4dr Sedan (3.0L 6cyl Turbodiesel 8A)
-
-200443309, 550i xDrive 4dr Hatchback AWD (4.4L 8cyl Turbo 8A) 
-
-200443307, 535i xDrive 4dr Hatchback AWD (3.0L 6cyl Turbo 8A) 
-
-200443308, 550i 4dr Hatchback (4.4L 8cyl Turbo 8A) 
-
-200443306, 535i 4dr Hatchback (3.0L 6cyl Turbo 8A) 
-
-200495408, 550i xDrive 4dr Hatchback AWD (4.4L 8cyl Turbo 8A) 
-
-200495407, 550i 4dr Hatchback (4.4L 8cyl Turbo 8A) 
-
-200495406, 535i xDrive 4dr Hatchback AWD (3.0L 6cyl Turbo 8A) 
-
-200474281, 535i 4dr Hatchback (3.0L 6cyl Turbo 8A) 
-
-200708946, 550i xDrive 4dr Hatchback AWD (4.4L 8cyl Turbo 8A) 
-
-200708945, 550i 4dr Hatchback (4.4L 8cyl Turbo 8A) 
-
-200708943, 535i 4dr Hatchback (3.0L 6cyl Turbo 8A) 
-
+200443309, 550i xDrive 4dr Hatchback AWD (4.4L 8cyl Turbo 8A)
+200443307, 535i xDrive 4dr Hatchback AWD (3.0L 6cyl Turbo 8A)
+200443308, 550i 4dr Hatchback (4.4L 8cyl Turbo 8A)
+200443306, 535i 4dr Hatchback (3.0L 6cyl Turbo 8A)
+200495408, 550i xDrive 4dr Hatchback AWD (4.4L 8cyl Turbo 8A)
+200495407, 550i 4dr Hatchback (4.4L 8cyl Turbo 8A)
+200495406, 535i xDrive 4dr Hatchback AWD (3.0L 6cyl Turbo 8A)
+200474281, 535i 4dr Hatchback (3.0L 6cyl Turbo 8A)
+200708946, 550i xDrive 4dr Hatchback AWD (4.4L 8cyl Turbo 8A)
+200708945, 550i 4dr Hatchback (4.4L 8cyl Turbo 8A)
+200708943, 535i 4dr Hatchback (3.0L 6cyl Turbo 8A)
 200708944, 535i xDrive 4dr Hatchback AWD (3.0L 6cyl Turbo 8A)
-
-200429534, 640i 2dr Coupe (3.0L 6cyl Turbo 8A) 
-
-200429533, 640i 2dr Convertible (3.0L 6cyl Turbo 8A) 
-
-200429536, 650i 2dr Coupe (4.4L 8cyl Turbo 8A) 
-
-200429535, 650i 2dr Convertible (4.4L 8cyl Turbo 8A) 
-
-200429537, 650i xDrive 2dr Convertible AWD (4.4L 8cyl Turbo 8A) 
-
-200429538, 650i xDrive 2dr Coupe AWD (4.4L 8cyl Turbo 8A) 
-
-200470699, 650i xDrive 2dr Convertible AWD (4.4L 8cyl Turbo 8A) 
-
-200470638, 650i 2dr Convertible (4.4L 8cyl Turbo 8A) 
-
-200470637, 640i xDrive 2dr Convertible AWD (3.0L 6cyl Turbo 8A) 
-
-200470636, 640i 2dr Convertible (3.0L 6cyl Turbo 8A) 
-
+200429534, 640i 2dr Coupe (3.0L 6cyl Turbo 8A)
+200429533, 640i 2dr Convertible (3.0L 6cyl Turbo 8A)
+200429536, 650i 2dr Coupe (4.4L 8cyl Turbo 8A)
+200429535, 650i 2dr Convertible (4.4L 8cyl Turbo 8A)
+200429537, 650i xDrive 2dr Convertible AWD (4.4L 8cyl Turbo 8A)
+200429538, 650i xDrive 2dr Coupe AWD (4.4L 8cyl Turbo 8A)
+200470699, 650i xDrive 2dr Convertible AWD (4.4L 8cyl Turbo 8A)
+200470638, 650i 2dr Convertible (4.4L 8cyl Turbo 8A)
+200470637, 640i xDrive 2dr Convertible AWD (3.0L 6cyl Turbo 8A)
+200470636, 640i 2dr Convertible (3.0L 6cyl Turbo 8A)
 200470635, 650i xDrive 2dr Coupe AWD (4.4L 8cyl Turbo 8A)
- 
-200470634, 650i 2dr Coupe (4.4L 8cyl Turbo 8A) 
-
-200470633, 640i xDrive 2dr Coupe AWD (3.0L 6cyl Turbo 8A) 
-
-200470632, 640i 2dr Coupe (3.0L 6cyl Turbo 8A) 
-
-200694229, 640i 2dr Convertible (3.0L 6cyl Turbo 8A) 
-
-200694230, 640i xDrive 2dr Convertible AWD (3.0L 6cyl Turbo 8A) 
-
-200694231, 650i 2dr Convertible (4.4L 8cyl Turbo 8A) 
-
-200694225, 640i 2dr Coupe (3.0L 6cyl Turbo 8A) 
-
-200694226, 640i xDrive 2dr Coupe AWD (3.0L 6cyl Turbo 8A) 
-
-200694227, 650i 2dr Coupe (4.4L 8cyl Turbo 8A) 
-
-200694228, 650i xDrive 2dr Coupe AWD (4.4L 8cyl Turbo 8A) 
-
-200694224, 650i xDrive 2dr Convertible AWD (4.4L 8cyl Turbo 8A) 
-
-200441996, 650i 4dr Sedan (4.4L 8cyl Turbo 8A) 
-
-200441997, 650i xDrive 4dr Sedan AWD (4.4L 8cyl Turbo 8A) 
-
-101418788, 640i 4dr Sedan (3.0L 6cyl Turbo 8A) 
-
-200471739, 640i 4dr Sedan (3.0L 6cyl Turbo 8A) 
-
-200471740, 640i xDrive 4dr Sedan AWD (3.0L 6cyl Turbo 8A) 
-
-200471741, 650i 4dr Sedan (4.4L 8cyl Turbo 8A) 
-
-200471742, 650i xDrive 4dr Sedan AWD (4.4L 8cyl Turbo 8A) 
-
+200470634, 650i 2dr Coupe (4.4L 8cyl Turbo 8A)
+200470633, 640i xDrive 2dr Coupe AWD (3.0L 6cyl Turbo 8A)
+200470632, 640i 2dr Coupe (3.0L 6cyl Turbo 8A)
+200694229, 640i 2dr Convertible (3.0L 6cyl Turbo 8A)
+200694230, 640i xDrive 2dr Convertible AWD (3.0L 6cyl Turbo 8A)
+200694231, 650i 2dr Convertible (4.4L 8cyl Turbo 8A)
+200694225, 640i 2dr Coupe (3.0L 6cyl Turbo 8A)
+200694226, 640i xDrive 2dr Coupe AWD (3.0L 6cyl Turbo 8A)
+200694227, 650i 2dr Coupe (4.4L 8cyl Turbo 8A)
+200694228, 650i xDrive 2dr Coupe AWD (4.4L 8cyl Turbo 8A)
+200694224, 650i xDrive 2dr Convertible AWD (4.4L 8cyl Turbo 8A)
+200441996, 650i 4dr Sedan (4.4L 8cyl Turbo 8A)
+200441997, 650i xDrive 4dr Sedan AWD (4.4L 8cyl Turbo 8A)
+101418788, 640i 4dr Sedan (3.0L 6cyl Turbo 8A)
+200471739, 640i 4dr Sedan (3.0L 6cyl Turbo 8A)
+200471740, 640i xDrive 4dr Sedan AWD (3.0L 6cyl Turbo 8A)
+200471741, 650i 4dr Sedan (4.4L 8cyl Turbo 8A)
+200471742, 650i xDrive 4dr Sedan AWD (4.4L 8cyl Turbo 8A)
 200692805, 650i xDrive 4dr Sedan AWD (4.4L 8cyl Turbo 8A)
- 
-200692806, 640i 4dr Sedan (3.0L 6cyl Turbo 8A) 
-
-200692803, 640i xDrive 4dr Sedan AWD (3.0L 6cyl Turbo 8A) 
-
+200692806, 640i 4dr Sedan (3.0L 6cyl Turbo 8A)
+200692803, 640i xDrive 4dr Sedan AWD (3.0L 6cyl Turbo 8A)
 200692804, 650i 4dr Sedan (4.4L 8cyl Turbo 8A)
-
-200429764, 750Li 4dr Sedan (4.4L 8cyl Turbo 8A) 
-
-200429884, 740Li xDrive 4dr Sedan AWD (3.0L 6cyl Turbo 8A) 
-
-200429763, 740i 4dr Sedan (3.0L 6cyl Turbo 8A) 
-
-200429762, 740Li 4dr Sedan (3.0L 6cyl Turbo 8A) 
-
-200429768, 760Li 4dr Sedan (6.0L 12cyl Turbo 8A) 
-
-200429767, 750i xDrive 4dr Sedan AWD (4.4L 8cyl Turbo 8A) 
-
-200429766, 750i 4dr Sedan (4.4L 8cyl Turbo 8A) 
-
-200429765, 750Li xDrive 4dr Sedan AWD (4.4L 8cyl Turbo 8A) 
-
-200495609, 750Li 4dr Sedan (4.4L 8cyl Turbo 8A) 
-
-200495610, 750Li xDrive 4dr Sedan AWD (4.4L 8cyl Turbo 8A) 
-
-200495611, 760Li 4dr Sedan (6.0L 12cyl Turbo 8A) 
-
-200495599, 740i 4dr Sedan (3.0L 6cyl Turbo 8A) 
-
-200495605, 750i 4dr Sedan (4.4L 8cyl Turbo 8A) 
-
-200495606, 750i xDrive 4dr Sedan AWD (4.4L 8cyl Turbo 8A) 
-
-200495607, 740Li 4dr Sedan (3.0L 6cyl Turbo 8A) 
-
-200495608, 740Li xDrive 4dr Sedan AWD (3.0L 6cyl Turbo 8A) 
-
-200705597, 750Li xDrive 4dr Sedan AWD (4.4L 8cyl Turbo 8A) 
-
-200705598, 750i xDrive 4dr Sedan AWD (4.4L 8cyl Turbo 8A) 
-
-200705600, 760Li 4dr Sedan (6.0L 12cyl Turbo 8A) 
-
-200705593, 750i 4dr Sedan (4.4L 8cyl Turbo 8A) 
-
-200705595, 740Li 4dr Sedan (3.0L 6cyl Turbo 8A) 
-
-200705596, 750Li 4dr Sedan (4.4L 8cyl Turbo 8A) 
-
-200692023, 740Ld xDrive 4dr Sedan AWD (3.0L 6cyl Turbodiesel 8A) 
-
-200705591, 740i 4dr Sedan (3.0L 6cyl Turbo 8A) 
-
+200429764, 750Li 4dr Sedan (4.4L 8cyl Turbo 8A)
+200429884, 740Li xDrive 4dr Sedan AWD (3.0L 6cyl Turbo 8A)
+200429763, 740i 4dr Sedan (3.0L 6cyl Turbo 8A)
+200429762, 740Li 4dr Sedan (3.0L 6cyl Turbo 8A)
+200429768, 760Li 4dr Sedan (6.0L 12cyl Turbo 8A)
+200429767, 750i xDrive 4dr Sedan AWD (4.4L 8cyl Turbo 8A)
+200429766, 750i 4dr Sedan (4.4L 8cyl Turbo 8A)
+200429765, 750Li xDrive 4dr Sedan AWD (4.4L 8cyl Turbo 8A)
+200495609, 750Li 4dr Sedan (4.4L 8cyl Turbo 8A)
+200495610, 750Li xDrive 4dr Sedan AWD (4.4L 8cyl Turbo 8A)
+200495611, 760Li 4dr Sedan (6.0L 12cyl Turbo 8A)
+200495599, 740i 4dr Sedan (3.0L 6cyl Turbo 8A)
+200495605, 750i 4dr Sedan (4.4L 8cyl Turbo 8A)
+200495606, 750i xDrive 4dr Sedan AWD (4.4L 8cyl Turbo 8A)
+200495607, 740Li 4dr Sedan (3.0L 6cyl Turbo 8A)
+200495608, 740Li xDrive 4dr Sedan AWD (3.0L 6cyl Turbo 8A)
+200705597, 750Li xDrive 4dr Sedan AWD (4.4L 8cyl Turbo 8A)
+200705598, 750i xDrive 4dr Sedan AWD (4.4L 8cyl Turbo 8A)
+200705600, 760Li 4dr Sedan (6.0L 12cyl Turbo 8A)
+200705593, 750i 4dr Sedan (4.4L 8cyl Turbo 8A)
+200705595, 740Li 4dr Sedan (3.0L 6cyl Turbo 8A)
+200705596, 750Li 4dr Sedan (4.4L 8cyl Turbo 8A)
+200692023, 740Ld xDrive 4dr Sedan AWD (3.0L 6cyl Turbodiesel 8A)
+200705591, 740i 4dr Sedan (3.0L 6cyl Turbo 8A)
 200705592, 740Li xDrive 4dr Sedan AWD (3.0L 6cyl Turbo 8A)
-
-200491672, LWB 4dr Sedan (4.4L 8cyl Turbo 8A) 
-
-200491675, LWB xDrive 4dr Sedan AWD (4.4L 8cyl Turbo 8A) 
-
-200491673, SWB xDrive 4dr Sedan AWD (4.4L 8cyl Turbo 8A) 
-
-200491674, SWB 4dr Sedan (4.4L 8cyl Turbo 8A) 
-
-200710071, LWB 4dr Sedan (4.4L 8cyl Turbo 8A) 
-
-200710067, SWB 4dr Sedan (4.4L 8cyl Turbo 8A) 
-
+200491672, LWB 4dr Sedan (4.4L 8cyl Turbo 8A)
+200491675, LWB xDrive 4dr Sedan AWD (4.4L 8cyl Turbo 8A)
+200491673, SWB xDrive 4dr Sedan AWD (4.4L 8cyl Turbo 8A)
+200491674, SWB 4dr Sedan (4.4L 8cyl Turbo 8A)
+200710071, LWB 4dr Sedan (4.4L 8cyl Turbo 8A)
+200710067, SWB 4dr Sedan (4.4L 8cyl Turbo 8A)
 200710078, LWB xDrive 4dr Sedan AWD (4.4L 8cyl Turbo 8A)
