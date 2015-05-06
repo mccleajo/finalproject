@@ -36,32 +36,33 @@ if ( !isset ( $_COOKIE['login'] ) ) {
 
 <?php
 
-date_default_timezone_set('UTC');
+// date_default_timezone_set('UTC');
 
-$monthNames = Array("January", "February", "March", "April", "May", "June", "July",
-"August", "September", "October", "November", "December");
+// $monthNames = Array("January", "February", "March", "April", "May", "June", "July",
+// "August", "September", "October", "November", "December");
 
-if (!isset($_REQUEST["month"])) $_REQUEST["month"] = date("n");
-if (!isset($_REQUEST["year"])) $_REQUEST["year"] = date("Y");
+// if (!isset($_REQUEST["month"])) $_REQUEST["month"] = date("n");
+// if (!isset($_REQUEST["year"])) $_REQUEST["year"] = date("Y");
 
-$cMonth = $_REQUEST["month"];
-$cYear = $_REQUEST["year"];
+// $cMonth = $_REQUEST["month"];
+// $cYear = $_REQUEST["year"];
 
-$prev_year = $cYear;
-$next_year = $cYear;
-$prev_month = $cMonth-1;
-$next_month = $cMonth+1;
+// $prev_year = $cYear;
+// $next_year = $cYear;
+// $prev_month = $cMonth-1;
+// $next_month = $cMonth+1;
 
-if ($prev_month == 0 ) {
-    $prev_month = 12;
-    $prev_year = $cYear - 1;
-}
-if ($next_month == 13 ) {
-    $next_month = 1;
-    $next_year = $cYear + 1;
-}
+// if ($prev_month == 0 ) {
+//     $prev_month = 12;
+//     $prev_year = $cYear - 1;
+// }
+// if ($next_month == 13 ) {
+//     $next_month = 1;
+//     $next_year = $cYear + 1;
+// }
 ?>
-<br>
+
+<!-- <br>
 	<table width="200">
 		<tr align="center">
 			<td bgcolor="#0099cc" style="color:#FFFFFF">
@@ -87,42 +88,49 @@ if ($next_month == 13 ) {
 						<td align="center" bgcolor="#0099cc" style="color:#FFFFFF"><strong>T</strong></td>
 						<td align="center" bgcolor="#0099cc" style="color:#FFFFFF"><strong>F</strong></td>
 						<td align="center" bgcolor="#0099cc" style="color:#FFFFFF"><strong>S</strong></td>
-					</tr>
+					</tr> -->
 
 <?php
-$timestamp = mktime(0,0,0,$cMonth,1,$cYear);
-$maxday = date("t",$timestamp);
-$thismonth = getdate ($timestamp);
-$startday = $thismonth['wday'];
-for ($i=0; $i<($maxday+$startday); $i++) {
-    if(($i % 7) == 0 ) echo "<tr>";
-    if($i < $startday) echo "<td></td>";
-    else echo "<td align='center' bgcolor='#E0E0E0' valign='middle' height='20px'>". ($i - $startday + 1) . "</td>";
-    if(($i % 7) == 6 ) echo "</tr>";
-}
+// $timestamp = mktime(0,0,0,$cMonth,1,$cYear);
+// $maxday = date("t",$timestamp);
+// $thismonth = getdate ($timestamp);
+// $startday = $thismonth['wday'];
+// for ($i=0; $i<($maxday+$startday); $i++) {
+//     if(($i % 7) == 0 ) echo "<tr>";
+//     if($i < $startday) echo "<td></td>";
+//     else echo "<td align='center' bgcolor='#E0E0E0' valign='middle' height='20px'>". ($i - $startday + 1) . "</td>";
+//     if(($i % 7) == 6 ) echo "</tr>";
+// }
 
 ?>
 
-</table>
+<!-- </table>
 </td>
 </tr>
-</table>
+</table> -->
 
+<div align ="center">
+<br>
+<form method="post" action ="myevents.php">
+    <input class="mybutton" name="myevents" id="myevents" value= "My Events" type="submit"/>
+</form><br>
 
 <form method="post">
   <input type = "text" name ="Searchbar" id = "Searchbar" value = "<?php if(isset($_POST['Searchbar'])) {echo $_POST['Searchbar'];}?>"/>
-  <input class="mybutton" name="Search" id="Search" value= "Search" type="submit"/>
+  <input class="mybutton" name="Search" id="Search" value= "Search All Events" type="submit"/>
 </form>
 
+</div>
 
 <?php
 if(isset($_POST['Searchbar'])) {
 $Searchbar = $_POST['Searchbar'];
 
 $dbc = @mysqli_connect("localhost", "mccleajo", "pV2YzEEU", mccleajo) OR die("message".mysqli_connect_error());
-$query = "SELECT * FROM Events WHERE
+$query = "SELECT event_id, name, date, time, address FROM Events WHERE
 
-name LIKE '%$Searchbar%'";
+name LIKE '%$Searchbar%'
+ORDER BY date ASC";
 
 $result = mysqli_query( $dbc, $query);
 #$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
@@ -137,17 +145,22 @@ echo "<tr><th>Events</th>";
 
         // Output a row
         echo "<tr>";
-        echo "<td bgcolor='#E0E0E0'><b>$name</b><br>
-        Address: $address<br>
-        Time: $time<br>
-        Date: $date<br>
+        echo "<td bgcolor='#E0E0E0'><b>$date</b><br><br>
+        <b>Name:</b> $name<br>
+        <b>Address:</b> $address<br>
+        <b>Time:</b> $time<br><br>
 
         <form method='post' action = 'joinevent.php'>
-        <input class = 'mybutton' type='submit' name='joinevent' value= 'Join Event'><br>
+        <input class = 'mybutton' type='submit' name='joinevent' value= 'Join Event'>
+        <input type = 'hidden' value='$event_id' name='ID'>
+        </form><br>
+
+        <form method='post' action = 'attendants.php'>
+        <input class = 'mybutton' type='submit' name='attendants' value= 'Attendants'>
         <input type = 'hidden' value='$event_id' name='ID'>
         </form>
 
-        <Br></td>";
+        <br></td>";
         echo "</tr>";
     }
 
@@ -163,7 +176,7 @@ echo "<tr><th>Events</th>";
 if(!isset($_POST['Searchbar'])) {
 
 $dbc = @mysqli_connect("localhost", "mccleajo", "pV2YzEEU", mccleajo) OR die("message".mysqli_connect_error());
-$query = "SELECT * FROM Events";
+$query = "SELECT event_id, name, date, time, address FROM Events ORDER BY date ASC";
 
 $result = mysqli_query( $dbc, $query);
 #$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
@@ -178,17 +191,23 @@ echo "<tr><th>Events</th>";
 
         // Output a row
         echo "<tr>";
-        echo "<td bgcolor='#E0E0E0'><b>$name</b><br>
-        Address: $address<br>
-        Time: $time<br>
-        Date: $date<br>
+        echo "<td bgcolor='#E0E0E0'><b>$date</b><br><br>
+        <b>Name:</b> $name<br>
+        <b>Address:</b> $address<br>
+        <b>Time:</b> $time<br><br>
 
         <form method='post' action = 'joinevent.php'>
-        <input class = 'mybutton' type='submit' name='joinevent' value= 'Join Event'><br>
+        <input class = 'mybutton' type='submit' name='joinevent' value= 'Join Event'>
+        <input type = 'hidden' value='$event_id' name='ID'>
+        </form><br>
+
+        <form method='post' action = 'attendants.php'>
+        <input class = 'mybutton' type='submit' name='attendants' value= 'Attendants'>
         <input type = 'hidden' value='$event_id' name='ID'>
         </form>
+  
 
-        <Br></td>";
+        <br></td>";
         echo "</tr>";
     }
 
