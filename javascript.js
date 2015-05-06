@@ -65,27 +65,31 @@ function validateusername(){
 }
 function validatepassword(){
 	var password=document.getElementById("newpw").value;
-	if ( password.length < 1 ) {
+	if ( password.length < 8 ) {
 		var error=document.getElementById("passworderror");
 		error.style.color = "red";
-		error.innerHTML = "Please enter a password";
+		error.innerHTML = "Please enter a password with at least 8 characters.";
 		return false;
 	}
 		var error=document.getElementById("passworderror");
 		error.innerHTML="";
 		return true;
 }
+
 function validateemail(){
-	var email=document.getElementById("newemail").value;
-	if ( email.length < 1 ) {
-		var error=document.getElementById("emailerror");
-		error.style.color = "red";
-		error.innerHTML = "Please enter an e-mail address";
-		return false;
-	}
-		var error=document.getElementById("emailerror");
-		error.innerHTML="";
-		return true;
+	var email= document.getElementById("newemail").value ;
+    var emailregex = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+    if (!emailregex.test(email)){
+     // if (email.length < 1) {
+        var error=document.getElementById("emailerror");
+        error.style.color = "red";
+        error.innerHTML = "Please enter a valid email address";
+        return false;
+      } 
+      	var error=document.getElementById("emailerror");
+     	error.innerHTML = "";
+     	return true;
+
 }
 function validateforgotpwemail(){
 	var email=document.getElementById("email").value;
