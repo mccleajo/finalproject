@@ -5,17 +5,21 @@
      <meta charset="utf-8" />
      <title>Posts</title>
      <link rel="stylesheet" type="text/css" href="projectstyle.css">
-     
+
+     <style>
+	 select, option {font-size: 150%;}
+	 </style>
+
 <body>
 
 <div class="container">
 <header>
     <div class="nav">
       <ul>
-        <li><a  class="active" href="homepage.php">Home</a></li>
+        <li><a href="homepage.php">Home</a></li>
         <li><a href="locations.php">Locations</a></li>
         <li><a href="events.php">Events</a></li>
-        <li><a href="posts.php">Posts</a></li>
+        <li><a class="active" href="posts.php">Posts</a></li>
         <li><a href="findprices.php">Prices</a></li>
         <li><a href="logout.php">Log Out</a></li>
       </ul>
@@ -40,7 +44,7 @@ else if ( isset ( $_POST['sendmail'] ) ) {
 	$from = 'From: ' . $_COOKIE['login'];
 	mail($to, $title, $body, $from);
 	?> <h2> E-Mail Successfully Sent </h2> <?php
-	displayposts();
+	displayposts($_POST['Searchbar']);
 
 }
 
@@ -54,11 +58,16 @@ else if ( isset ( $_POST['email'] ) ) {
 else if ( isset ( $_POST['submit'] ) ) {
 	insertPost();
 }
+else if ( isset ( $_POST['Searchbar'])){
+	displayposts($_POST['Searchbar']);
+
+}
 else{
 ?>
-	<h2>Here are posts from BMWLand users!</h2>
+	
 <?php
-	displayposts();
+
+	displayposts('');
 }
 ?>
 
@@ -69,16 +78,32 @@ else{
 
 <?php
 
-function displayposts(){
+function displayposts($Searchbar){
 
 ?>
+	<h2>Here are posts from BMWLand users!</h2>
+
+	<form method="post">
+  		<input type = "text" name ="Searchbar" id = "Searchbar" value = "<?php if(isset($_POST['Searchbar'])) {echo $_POST['Searchbar'];}?>"/>
+  		<input class="mybutton" name="Search" id="Search" value= "Search" type="submit"/>
+  	</form>
+
 	<form method='post'>
-		<input type='submit' name = 'addpost' value='Add a Post'>
+		<input class ='mybutton' type='submit' name = 'addpost' value='Add a Post'>
 	</form>
 	
 <?php
 
-	$query="SELECT * FROM posts";
+	
+
+	$query="SELECT * FROM posts WHERE
+		ID LIKE '%$Searchbar%' OR
+		title LIKE '%$Searchbar%' OR
+		created_by LIKE '%$Searchbar%' OR
+		content LIKE '%$Searchbar%' OR
+		date LIKE '%$Searchbar%' OR
+		post_type LIKE '%$Searchbar%'";
+
 	$dbc = @mysqli_connect("localhost", "mccleajo", "pV2YzEEU", mccleajo) OR                           
     	die("message".mysqli_connect_error());
     $result = mysqli_query($dbc,$query) OR  
@@ -106,13 +131,13 @@ function showpost($id, $title, $created_by, $content, $date, $post_type, $button
 
 ?>
 
-	<form method='post'>
+	<br><form method='post'>
 		<table>
 			<tr>
-				<td style="width:'500'"> 
-					 <?php echo "$title $date"; ?><br>
-					 <?php echo "$created_by $post_type"; ?><br>
-					 <?php echo "$content"; ?> <br> 	
+				<td bgcolor='#E0E0E0' style="width:'500'"> 
+					 <?php echo "<b>Title:</b> $title<br> <b>Date:</b> $date"; ?><br>
+					 <?php echo "<b>Posted by:</b> $created_by <br><b>Action:</b> $post_type"; ?><br>
+					 <?php echo "<b>Content:</b> $content"; ?> <br> 	
 					 <input type='hidden' name='id' value="<?php echo $id; ?>" />				 
 				</td>
 			</tr>
@@ -122,7 +147,7 @@ function showpost($id, $title, $created_by, $content, $date, $post_type, $button
 
 		if ( True == $button ) {	
 		?>	
-		<input type='submit' value='E-Mail this user!' name="email" />	
+		<input class ='mybutton' type='submit' value='Contact' name="email" />	
 		<?php
 		}
 		?>
@@ -149,7 +174,7 @@ function displaymailform($id, $email){
 	<form method="post">
 		Title: <input type='text' name='title' id='title'><br>	
 		<input type='text' name='content' id='content' style="text-align: left;padding:  0.4em;padding-bottom:190px;width: 400px;height: 10px;"><br>
-		<input type='submit' name='sendmail' value='Send mail!'>
+		<input class ='mybutton' type='submit' name='sendmail' value='Send mail!'>
 		<input type='hidden' name='id' value='<?php echo $id ?>'>
 	</form>
 		
@@ -160,20 +185,29 @@ function displaymailform($id, $email){
 function displayInsertPostForm(){
 ?>
 
-	<fieldset><legend>Add a Post</legend>
+	<h2>Add a Post</h2>
 		<form method="post" onsubmit="return validate();"> 
-			Title<input type='text' name='title' id='title'><span id="titleerror"></span><br>
-			Type: 
-			<select name="post_type" id='post_type'>
-				<option value="Selling">Selling</option>
-				<option value="Buying">Buying</option>
-				<option value="Trading">Trading</option>
-				<option value="Event">Event</option>
-				<option value="Other">Other</option>
-			</select><span id="posttypeerror"></span><br>
-			Content: <span id="contentterror"></span><br>
+		<table>
+    		<tr>
+				<td><label for="title">Title:</label></td>
+				<td><input type='text' name='title' id='title'></td>
+				<td><span id="titleerror"></span><br></td>
+			</tr>
+			<tr>
+				<td><label for="post_type">Type:</label></td>
+				<td><select name="post_type" id='post_type'>
+					<option value="Selling">Selling</option>
+					<option value="Buying">Buying</option>
+					<option value="Trading">Trading</option>
+					<option value="Event">Event</option>
+					<option value="Other">Other</option>
+				</select></td>
+				<td><span id="posttypeerror"></span><br></td>
+			</tr>
+		</table>
+			<br>Content: <span id="contentterror"></span><br>
 			<input type='text' name='content' id='content' style="text-align: left;padding:  0.4em;padding-bottom:190px;width: 400px;height: 10px;"><br>
-			<input type='submit' name ='submit' value='Add'>
+			<input class ='mybutton' type='submit' name ='submit' value='Post'>
 		</form>
 	</fieldset>
 	
